@@ -76,7 +76,7 @@ public class MouseSprite {
 	public void Hit() { // When the mouse runs into a wall
 		timesHit++;
 		System.out.println("The mouse hit a wall, ouch");
-		if (hitsUntilTimeOut % timesHit == 0) { // Every timesHit the mouse hits a wall say a message
+		if (timesHit % hitsUntilTimeOut == 0) { // Every timesHit the mouse hits a wall say a message
 			System.out.println("You hit the wall too much and the mouse took a break");
 		}
 	}
